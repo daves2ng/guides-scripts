@@ -27,9 +27,14 @@ sudo apt install jenkins -y
 
 sudo ufw allow 8080
 
+echo 'now setting jenkins boot parameters, please wait' && sleep 5
+
 # Set jenkins to load onn startup
 
 sudo systemctl enable jenkins
+
+echo 'The installation is successful...'
+echo 'performing cleanup, please wait...' && sleep 8
 
 # Display the default jenkins password
 
