@@ -1,0 +1,45 @@
+Github Jenkins Token
+
+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
+
+Installing Jenkins in Ubuntu
+
+Install Java
+
+sudo apt install default-jre
+
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+
+sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+sudo apt update
+
+sudo apt install jenkins
+
+sudo ufw allow 8080
+
+sudo ufw allow OpenSSH
+sudo ufw enable
+
+sudo ufw status
+
+INSTALLING NODEJS AND ANOM
+
+curl -SL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+
+
+Building the app and deploying to docker
+
+docker build -f curriculum-front/Dockerfile .
+
+Using FTS to download files in Linux
+
+wget --user=vivek --ask-password http://192.168.1.10/docs/foo.pdf
+
+e.g.
+wget ftp://FP2ee6a1:*JN4gq$CE7xo{PJ@ftp-pro.houston.softwaregrp.com/UFT_Developer_2021_R1_Linux64_Setup.tar.gz
+
+
+wget --user=FP2ee6a1 --password='*JN4gq$CE7xo{PJ' ftp://ftp-pro.houston.softwaregrp.com/UFT_Developer_2021_R1_Linux64_Setup.tar.gz
