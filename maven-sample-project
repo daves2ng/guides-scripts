@@ -1,0 +1,5 @@
+mvn archetype:generate -DgroupId=com.mkyong.web -DartifactId=DevOps-Build
+	-DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+    mvn archetype:generate -DgroupId=com.mkyong -DartifactId=DevOps-second
+	-DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
