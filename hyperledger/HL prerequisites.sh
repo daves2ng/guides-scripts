@@ -30,3 +30,6 @@ sudo apt-get install npm -y
 sudo apt-get install python3 -y
 
 sudo apt-get install docker-compose -y
+
+sudo apt install golang-go -y
+
