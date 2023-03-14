@@ -36,3 +36,11 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 # You may want to verify that docker installation is successful by uncommenting the below
 
 # sudo docker run hello-world
+
+# To run docker as a non-root user, perform the following
+
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+
+# After the above steps, you need to log out and then log back index
